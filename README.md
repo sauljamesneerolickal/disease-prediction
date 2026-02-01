@@ -8,6 +8,9 @@
 | :---: | :---: | :---: |
 | ![Home](home_preview.png) | ![About](about_preview.png) | ![How It Works](workflow_preview.png) |
 
+### 💎 Concept Design
+![Premium UI Mockup](premium_ui_mockup.jpg)
+
 ## 🚀 Features
 
 - **Symptom Analysis**: Leverages a local Scikit-Learn (SVM) model to predict 24 different diseases with high accuracy.
