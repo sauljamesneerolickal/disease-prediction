@@ -2,7 +2,11 @@
 
 **BioGen** is an advanced health assistant that leverages machine learning to predict over 24 different diseases from user-described symptoms. It provides immediate, condition-specific nutritional recovery plans and features an integrated medical chatbot powered by MedGemma-4B-IT for a comprehensive digital health experience.
 
-![BioGen Preview](screenshot.png)
+### 📸 Application Preview
+
+| Home & Diagnosis | About & Diseases | How It Works |
+| :---: | :---: | :---: |
+| ![Home](home_preview.png) | ![About](about_preview.png) | ![How It Works](workflow_preview.png) |
 
 ## 🚀 Features
 
