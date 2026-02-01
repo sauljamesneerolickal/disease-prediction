@@ -11,58 +11,57 @@
 ### 💎 Concept Design
 ![Premium UI Mockup](premium_ui_mockup.jpg)
 
-## 🚀 Features
+## 🎯 Project Highlights
 
-- **Symptom Analysis**: Leverages a local Scikit-Learn (SVM) model to predict 24 different diseases with high accuracy.
-- **Essential Nutrition**: Automatically provides specialized dietary recommendations and health tags for every diagnosis.
-- **BioGen AI Chatbot**: Integrated with Hugging Face's `medgemma-4b-it` for general medical inqueries and conversational support.
-- **Dynamic UI**: A modern, glassmorphic dark-themed interface with real-time confidence meters and interactive animations.
-- **Responsive Design**: Fully optimized for both desktop and mobile viewing.
+- **Predictive AI**: A local Scikit-Learn (SVM) model trained to recognize 24 conditions with high precision.
+- **Holistic Recovery**: Beyond diagnosis, the app provides actionable "Essential Nutrition" steps.
+- **Medical LLM**: Integrated with Google's MedGemma via Hugging Face for nuanced health conversations.
+- **Premium UX**: Modern glassmorphic design with real-time feedback and smooth transitions.
+
+## 🏥 Supported Diseases (24)
+
+BioGen is currently trained to analyze and provide guidance for the following conditions:
+- **Skin**: Acne, Fungal Infection, Psoriasis, Impetigo, Chicken Pox
+- **Chronic**: Diabetes, Hypertension, Arthritis, Migraine, Cervical Spondylosis, Varicose Veins
+- **Infections**: Dengue, Malaria, Typhoid, Common Cold, UTI
+- **Digestive**: GERD, Peptic Ulcer Disease, Hemorrhoids, Jaundice
+- **Respiratory**: Bronchial Asthma, Pneumonia
+- **Reactions**: Allergy, Drug Reaction
 
 ## 🛠️ Tech Stack
 
-- **Backend**: Python, Flask
-- **Machine Learning**: Scikit-Learn (SVM), Joblib, Pandas
-- **Frontend**: HTML5, Vanilla CSS3, JavaScript (ES6+)
-- **APIs**: Hugging Face Inference API (MedGemma)
+- **Backend**: Python (Flask)
+- **ML**: Scikit-Learn, Joblib, TF-IDF Vectorization
+- **Frontend**: ES6 JavaScript, Vanilla CSS3 (Glassmorphism)
+- **AI Support**: Hugging Face Inference API
 
-## 📦 Installation & Setup
+## 📦 Installation & Quick Start
 
-1. **Clone the repository**:
+1. **Clone & Enter**:
    ```bash
    git clone <repository-url>
    cd "disease prediction"
    ```
 
-2. **Install dependencies**:
+2. **Install Dependencies**:
    ```bash
    pip install -r requirements.txt
    ```
 
-3. **Configure Environment Variables**:
-   Create a `.env` file in the root directory and add your Hugging Face API token:
-   ```env
-   HF_API_TOKEN=your_huggingface_token_here
+3. **Configure API**:
+   Add your `HF_API_TOKEN` to a `.env` file in the root directory.
+
+4. **Launch**:
+   ```bash
+   python app.py
    ```
+   Open `http://127.0.0.1:5000`
 
-4. **Prepare the Model**:
-   Ensure the following files exist in the `model/` directory:
-   - `svm_model.pkl`
-   - `tfidf_vectorizer.pkl`
-   - `label_encoder.pkl`
+## ⚠️ Experimental & Unstable Areas
 
-## 🏃 Running the Application
+- **Unknown Condition Detection**: The "Confidence Margin" logic is experimental. If symptoms are ambiguous, the AI may categorize them as "Unknown" to prioritize safety.
+- **LLM Latency**: The chatbot depends on Hugging Face's inference servers; response times may vary based on model loading state.
+- **Model Thresholds**: Confidence thresholds (currently 40%) are tunable in `app.py` for varying levels of diagnostic strictness.
 
-Start the Flask development server:
-```bash
-python app.py
-```
-Visit `http://127.0.0.1:5000` in your browser.
-
-## 🏥 Supported Diseases (24)
-
-BioGen currently supports detailed analysis and nutrition for:
-- Acne, Allergy, Arthritis, Bronchial Asthma, Cervical Spondylosis, Chicken Pox, Common Cold, Dengue, Diabetes, Drug Reaction, Fungal Infection, GERD, Hemorrhoids, Hypertension, Impetigo, Jaundice, Malaria, Migraine, Peptic Ulcer Disease, Pneumonia, Psoriasis, Typhoid, UTI, and Varicose Veins.
-
-## ⚠️ Disclaimer
+## ⚖️ Medical Disclaimer
 **BioGen is an AI prototype for educational purposes.** The results provided are not a substitute for professional medical advice, diagnosis, or treatment. Always consult with a qualified healthcare provider for any medical concerns.
