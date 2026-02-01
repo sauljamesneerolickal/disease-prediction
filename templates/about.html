@@ -1,0 +1,93 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="page-wrapper">
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>Revolutionizing Personal Health <br> <span class="highlight-purple">Through AI</span></h2>
+                <p class="section-desc">We combine advanced machine learning with nutritional science to provide
+                    immediate health insights and actionable recovery plans.</p>
+            </div>
+
+            <div class="cards-grid">
+                <div class="card">
+                    <h3>Our Mission</h3>
+                    <p>To democratize access to health guidance. We believe everyone deserves instant, accurate insights
+                        into their well-being, coupled with the nutritional advice needed to heal.</p>
+                </div>
+                <div class="card">
+                    <h3>The Technology</h3>
+                    <p>BioGen utilizes cutting-edge Natural Language Processing (NLP) to understand symptoms in plain
+                        English, mapped against a comprehensive medical database.</p>
+                </div>
+                <div class="card">
+                    <h3>Holistic Approach</h3>
+                    <p>Medicine is only half the cure. Our Generative AI engine designs meal plans that specifically
+                        target your condition, promoting faster recovery through nutrition.</p>
+                </div>
+            </div>
+            <!-- Supported Diseases Section -->
+            <div class="section-header" style="margin-top: 80px;">
+                <h2>Supported <span class="highlight-blue">Diseases</span></h2>
+                <p class="section-desc">BioGen is currently trained to analyze and provide guidance for the following 24
+                    conditions, organized by health category.</p>
+            </div>
+
+            <div class="disease-categories">
+                <!-- Skin Conditions -->
+                <div class="category-card">
+                    <h3><span class="material-symbols-outlined">face</span>Skin Conditions</h3>
+                    <div class="category-disease-list">
+                        <span>Acne</span><span>Fungal
+                            Infection</span><span>Psoriasis</span><span>Impetigo</span><span>Chicken Pox</span>
+                    </div>
+                </div>
+
+                <!-- Chronic Illnesses -->
+                <div class="category-card">
+                    <h3><span class="material-symbols-outlined">monitor_heart</span>Chronic Illnesses</h3>
+                    <div class="category-disease-list">
+                        <span>Diabetes</span><span>Hypertension</span><span>Arthritis</span><span>Migraine</span><span>Cervical
+                            Spondylosis</span><span>Varicose Veins</span>
+                    </div>
+                </div>
+
+                <!-- Infections -->
+                <div class="category-card">
+                    <h3><span class="material-symbols-outlined">thermostat</span>Infections & Fevers</h3>
+                    <div class="category-disease-list">
+                        <span>Dengue</span><span>Malaria</span><span>Typhoid</span><span>Common
+                            Cold</span><span>UTI</span>
+                    </div>
+                </div>
+
+                <!-- Digestive Health -->
+                <div class="category-card">
+                    <h3><span class="material-symbols-outlined">healing</span>Digestive Health</h3>
+                    <div class="category-disease-list">
+                        <span>GERD</span><span>Peptic Ulcer Disease</span><span>Hemorrhoids</span><span>Jaundice</span>
+                    </div>
+                </div>
+
+                <!-- Respiratory Health -->
+                <div class="category-card">
+                    <h3><span class="material-symbols-outlined">air</span>Respiratory</h3>
+                    <div class="category-disease-list">
+                        <span>Bronchial Asthma</span><span>Pneumonia</span>
+                    </div>
+                </div>
+
+                <!-- Reactions -->
+                <div class="category-card">
+                    <h3><span class="material-symbols-outlined">health_and_safety</span>Allergies & Reactions</h3>
+                    <div class="category-disease-list">
+                        <span>Allergy</span><span>Drug Reaction</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+{% endblock %}

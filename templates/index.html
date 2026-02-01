@@ -1,0 +1,60 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<!-- Hero Section -->
+<header id="home" class="hero">
+    <div class="container hero-content">
+        <h1>AI-Powered <span class="highlight-blue">Disease Prediction</span> & <br> dietary guidance.</h1>
+        <p class="subtitle">Describe your symptoms, getting a preliminary diagnosis and a custom AI-generated meal plan
+            to help you recover faster.</p>
+
+        <div class="symptom-input-box">
+            <textarea placeholder="I have a headache and feel nauseous..."></textarea>
+            <div class="action-area">
+                <button class="btn-primary">Analyze Symptoms</button>
+            </div>
+        </div>
+
+        <!-- Results Section (Hidden by default) -->
+        <div class="results-container" style="display: none; opacity: 0;">
+            <div class="result-card diagnosis-card">
+                <div class="card-header">
+                    <span class="material-symbols-outlined icon-pulse">monitor_heart</span>
+                    <h3>Potential Diagnosis</h3>
+                </div>
+                <div class="card-body">
+                    <h2 class="diagnosis-title" id="prediction-title">...</h2>
+                    <div class="confidence-meter">
+                        <div class="meter-label">
+                            <span>Confidence Score:</span>
+                            <span class="percentage" id="prediction-confidence">0%</span>
+                        </div>
+                        <div class="meter-bar">
+                            <div class="fill" id="prediction-bar" style="width: 0%"></div>
+                        </div>
+                    </div>
+                    <p class="diagnosis-desc" id="prediction-desc">Analysis results will appear here.</p>
+                </div>
+            </div>
+
+            <div class="result-card meal-card">
+                <div class="card-header">
+                    <span class="material-symbols-outlined icon-leaf">restaurant_menu</span>
+                    <h3>Essential Nutrition</h3>
+                </div>
+                <div class="card-body">
+                    <h2 class="meal-title">...</h2>
+                    <div class="tags">
+                        <!-- Tags will go here -->
+                    </div>
+                    <ul class="meal-details">
+                        <!-- Dynamic bullets will go here -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <p class="disclaimer">*This is an AI prototype. Always consult a doctor for medical advice.</p>
+    </div>
+</header>
+{% endblock %}

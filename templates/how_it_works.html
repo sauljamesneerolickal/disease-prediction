@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="page-wrapper">
+    <!-- Steps Section -->
+    <section id="how-it-works" class="steps">
+        <div class="container">
+            <div class="section-header">
+                <h2>From Symptoms to <span class="highlight-gradient">Solutions</span></h2>
+                <p class="section-desc">A simple three-step process to better health.</p>
+            </div>
+
+            <div class="steps-flow">
+                <div class="step-card">
+                    <div class="step-number">01</div>
+                    <div class="step-content">
+                        <h3>Analyze</h3>
+                        <p>You describe your symptoms naturally. Our NLP engine parses your text to identify key medical
+                            indicators.</p>
+                    </div>
+                </div>
+
+                <div class="step-arrow">
+                    <span class="material-symbols-outlined bounce">keyboard_double_arrow_down</span>
+                </div>
+
+                <div class="step-card" id="predict-step">
+                    <div class="step-number">02</div>
+                    <div class="step-content">
+                        <h3>Predict</h3>
+                        <p>The trained machine learning model analyzes the input symptoms and predicts the most likely
+                            disease from the set of diseases it was trained on.</p>
+                    </div>
+                </div>
+
+                <div class="step-arrow">
+                    <span class="material-symbols-outlined bounce">keyboard_double_arrow_down</span>
+                </div>
+
+                <div class="step-card">
+                    <div class="step-number">03</div>
+                    <div class="step-content">
+                        <h3>Recover</h3>
+                        <p>Receive a tailored diagnosis and a nutritional meal plan designed to support your body's
+                            healing process.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+{% endblock %}
