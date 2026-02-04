@@ -8,6 +8,10 @@
 | :---: | :---: | :---: |
 | ![Home](home_preview.png) | ![About](about_preview.png) | ![How It Works](workflow_preview.png) |
 
+## 🚀 Live Demo
+
+Check out the live application here: [BioGen on AWS Elastic Beanstalk](http://diseaseprediction-env.eba-3qpujgpa.ap-south-1.elasticbeanstalk.com/)
+
 ## 🎯 Project Highlights
 
 - **Predictive AI**: A local Scikit-Learn (SVM) model trained to recognize 24 conditions with high precision.
